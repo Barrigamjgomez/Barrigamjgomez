@@ -1,11 +1,11 @@
-
-
 $(document).ready(function(){
- var elemento = $('#elemento');
-
-  
-		$('#elemento').toggle();
-	
+    $('.btn-about').click(function(){
+        $('#elemento').toggle(1000); 
+    });
+    $('#btn-home').click(function(){
+    	$('#elemento').hide(1000);
+    });
+       
 });
 
 

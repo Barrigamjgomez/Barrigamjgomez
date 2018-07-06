@@ -65,13 +65,23 @@ header{
 }
 
 #elemento{
+	display: none;
 	position:absolute;
+	padding: 2%;
   margin:8%;
   width:30%; 
-  height:50vh;
+  height:45vh;
   background-repeat: no-repeat;
   color: white;
-  background: red;
+  text-align: center;
+  background: #010511;
+  border-radius: 34px 34px 34px 34px;
+	-moz-border-radius: 34px 34px 34px 34px;
+	-webkit-border-radius: 34px 34px 34px 34px;
+	border: 0px solid #000000;
+	-webkit-box-shadow: -7px 6px 32px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: -7px 6px 32px -4px rgba(0,0,0,0.75);
+	box-shadow: -7px 6px 32px -4px rgba(0,0,0,0.75);
 }
 .Skill{
 	height: 100vh;
@@ -91,13 +101,6 @@ header{
 	padding-top: 10vh;
 	width: 100vw;	
 }
-.Trabajos{
-
-	height: 100vh;
-	width: 99vw;
-	background-color:lightblue ;
-}
-
 
 .navbar-brand{
 	display: none;
@@ -107,10 +110,6 @@ header{
 	display: none;
 }
 /* Fin botones circulares */
-
-
-{
-
 
 
 @media only screen and (max-width: 425px) {
@@ -148,11 +147,14 @@ header{
     .animales{
     	display: none;
     }
+    .about{
+    	display: none;
+    }
 }   
 @media (min-width: 576px){
 
 .modal-dialog {
     max-width: 900px;
     margin: 1.75rem auto;
-}
+	}
 }
