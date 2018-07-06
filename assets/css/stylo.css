@@ -79,7 +79,7 @@ header{
 	margin-top: 30vh;
 	margin-left: 40vw;
 	font-size: 40%;
-	background: red;
+
 	padding:  2% "%" 0 2%;
 }
 .bg-dark {
@@ -209,4 +209,11 @@ header{
 	 .title{
 	 	display: none;
 	 }
+}	
+
+@media only screen and (min-width: 1024px) {
+		.title{
+	 	display: none;
+	 }	 
+	
 }
