@@ -48,7 +48,8 @@
 
 .cat {
   bottom:0vh;
-  left: 400px;
+  left: 820px;
+  top:45vh;
 }
 .cat .face {
   top: 22px;
@@ -143,6 +144,7 @@
 
 
 .dog {
+  top:45vh;
   left: 600px;
   bottom:4vh;
   background-color: #ffff;

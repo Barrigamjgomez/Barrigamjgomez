@@ -12,8 +12,12 @@ header{
 	position: relative;
 	background: #000619;
 	padding-top: 5vh;
-	height: 15vh;
+	height: 18vh;
 	width: 100vw;
+	z-index: 2;
+	-webkit-box-shadow: 9px 25px 70px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 9px 25px 70px 0px rgba(0,0,0,0.75);
+	box-shadow: 9px 25px 70px 0px rgba(0,0,0,0.75);
 	
 	
 }
@@ -34,8 +38,6 @@ header{
 }
 .btnRS:hover {
 	color: red;
-    
-
 }
 
 .logo{
@@ -54,35 +56,74 @@ header{
 	padding-left:54%;	
 }
 .cote{
+	position: absolute;
 	display: block;
+	z-index: 1000;
 	margin:auto;
 	padding-top: 5vh;
+	
+
 }
 .Home{
 	height: 70vh;
 	width: 99vw;
 	background: #030624;
 }
+.btn{
+	margin-top: -20px;
+}
+.Bienvenido{
+	position: absolute;
+	font-family: 'Timmana', sans-serif;
+	color: white;
+	margin-top: 30vh;
+	margin-left: 40vw;
+	font-size: 40%;
+	background: red;
+	padding:  2% "%" 0 2%;
+}
+.bg-dark {
+	height: 1%
+    background-color: #000619!important;
+}
 
 #elemento{
 	display: none;
 	position:absolute;
 	padding: 2%;
-  margin:8%;
+	margin-top:30px;
+	margin-left: 30px;
+
   width:30%; 
   height:45vh;
   background-repeat: no-repeat;
-  color: white;
+  color:white;
   text-align: center;
-  background: #010511;
+  background: rgb(128, 128, 128);
   border-radius: 34px 34px 34px 34px;
 	-moz-border-radius: 34px 34px 34px 34px;
 	-webkit-border-radius: 34px 34px 34px 34px;
+	
 	border: 0px solid #000000;
 	-webkit-box-shadow: -7px 6px 32px -4px rgba(0,0,0,0.75);
 	-moz-box-shadow: -7px 6px 32px -4px rgba(0,0,0,0.75);
 	box-shadow: -7px 6px 32px -4px rgba(0,0,0,0.75);
 }
+
+.triangulo-equilatero-bottom-left {
+			display: none;
+			margin-left: 60vh;
+			margin-top: 15vh;
+			position: absolute;
+     	width: 0; 
+     height: 0; 
+     border-left: 100px solid rgb(128, 128, 128);
+     border-top: 50px solid transparent;
+     border-bottom: 50px solid transparent;
+}
+  	
+
+
 .Skill{
 	height: 100vh;
 	width: 99vw;
@@ -95,7 +136,7 @@ header{
 }
 .pskill{
 	width: 100%
-	height:100vh;
+	height:80vh;
 }
 .contenedorSkill{
 	padding-top: 10vh;
@@ -110,7 +151,10 @@ header{
 	display: none;
 }
 /* Fin botones circulares */
-
+.fondo{
+	position: absolute;
+	display: none;
+}
 
 @media only screen and (max-width: 425px) {
 		header{	
@@ -157,4 +201,12 @@ header{
     max-width: 900px;
     margin: 1.75rem auto;
 	}
+}
+@media only screen and (max-width: 768px) {
+	 .contenedorSkill{
+	 	display: none;
+	 }
+	 .title{
+	 	display: none;
+	 }
 }
